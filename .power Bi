@@ -1,0 +1,32 @@
+# EXCEL MANIPULATION
+1. REMOVE DUPLICATE VALUES.
+2. CREATE RIGHT FORMAT FOR DATE COLUMNS.
+3. APPLYING FILTER & SORTING DATA.
+4. HANDLE NULL VALUES.
+5. APPLY CONDTIONAL FORMATING FOR CHECK DATA INTEGRATE.
+6. CORRECTING WORNG VALUES
+                          NEXT SAVE FILE IN EXCEL (CTRL+S)
+POWER BI DESKTOP
+IMPORT FILE IN POWER BI ( BY SELECTING EXCEL FILE)
+CREATE SOME NEW MEASUREMENTS BY DAX
+Dax Code for Measurements.
+
+Total Employee = Count(employee_id) - Count (employee_resign_date)
+# Total employee To know the HR How many are employee are the work at present
+
+Salary contribution = calculate ( sum(salary),filter(hr_data,isblank(employee_resign_date)))
+# Total employee Salary to filter data Current employee only used isbalnk() function to return the Only employee_resign_date was blanked
+# To know the  Salary paid HR budgets plan
+
+New Employee = calculate ( count(employee_id),filter(hr_data,year(employee_join_date)=2023)
+# New employee joined this year to know the how many hiring was happends.
+
+Remaining Budgets = Total budget - calculate ( sum(salary_ctc), filter( hr_data, year(employee_join_date)=2023)
+# paly key For Hr to offers new employee to budgets based package on new hirings 
+
+# OTHER VISUAL WAS CREATE BY THE PIE CHART AND COLUMN CHART ARE BASED ON THE  DATASET (HR_DATA)
+ # TOTAL EMPLOYEE TO BY GENDERS.
+ # TOTAL EMPLOYEE WORK TYPE.
+ # TOTAL EMPLOYEE DEPARTMENT WISE.
+ # PAST TRENDS ON JOIN VS RESIGN OF EMPLOYEE.
+ # EMPLOYEE RATEING DEPARTMENT WISE.
