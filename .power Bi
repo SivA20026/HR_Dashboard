@@ -22,7 +22,9 @@ New Employee = calculate ( count(employee_id),filter(hr_data,year(employee_join_
 # New employee joined this year to know the how many hiring was happends.
 
 Remaining Budgets = Total budget - calculate ( sum(salary_ctc), filter( hr_data, year(employee_join_date)=2023)
-# paly key For Hr to offers new employee to budgets based package on new hirings 
+# paly key For Hr to offers new employee to budgets based package on new hirings
+
+Real Power Bi file Google Drive Link : https://drive.google.com/file/d/1QxUJHCPf0_QstKTtQxGhbWJymzRYoHuu/view?usp=sharing
 
 # OTHER VISUAL WAS CREATE BY THE PIE CHART AND COLUMN CHART ARE BASED ON THE  DATASET (HR_DATA)
  # TOTAL EMPLOYEE TO BY GENDERS.
